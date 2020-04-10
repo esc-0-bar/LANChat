@@ -1,4 +1,4 @@
-package sample;
+package LANChat;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

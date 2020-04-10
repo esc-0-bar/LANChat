@@ -1,4 +1,4 @@
-package sample;
+package LANChat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,9 +8,9 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class ClientHandler implements Runnable{
-    private BufferedReader in;
-    private PrintWriter out;
-    private ArrayList<ClientHandler> clients;
+    private final BufferedReader in;
+    private final PrintWriter out;
+    private final ArrayList<ClientHandler> clients;
 
     public ClientHandler(Socket client, ArrayList<ClientHandler> clients) throws IOException {
         this.clients = clients;
@@ -21,6 +21,7 @@ public class ClientHandler implements Runnable{
     @Override
     public void run() {
             try {
+                //noinspection InfiniteLoopStatement
                 while (true){
                     String request = in.readLine();
                     outToAll(request);

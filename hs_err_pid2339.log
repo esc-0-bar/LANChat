@@ -18,7 +18,7 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -javaagent:/snap/intellij-idea-community/216/lib/idea_rt.jar=44905:/snap/intellij-idea-community/216/bin -Dfile.encoding=UTF-8 sample.Main
+Command Line: -javaagent:/snap/intellij-idea-community/216/lib/idea_rt.jar=44905:/snap/intellij-idea-community/216/bin -Dfile.encoding=UTF-8 LANChat.Main
 
 Host: AMD Ryzen 5 2600 Six-Core Processor, 12 cores, 15G, Ubuntu 18.04.4 LTS
 Time: Wed Apr  1 19:06:13 2020 +06 elapsed time: 4 seconds (0d 0h 0m 4s)
@@ -588,8 +588,8 @@ Event: 4.146 loading class com/sun/prism/GraphicsResource
 Event: 4.146 loading class com/sun/prism/GraphicsResource done
 Event: 4.146 loading class com/sun/prism/GraphicsResource
 Event: 4.146 loading class com/sun/prism/GraphicsResource done
-Event: 4.165 loading class sample/Conversation
-Event: 4.165 loading class sample/Conversation done
+Event: 4.165 loading class LANChat/Conversation
+Event: 4.165 loading class LANChat/Conversation done
 Event: 4.165 Thread 0x00007f5530710000 Thread added: 0x00007f5530710000
 Event: 4.165 Protecting memory [0x00007f557b4c7000,0x00007f557b4cb000] with protection modes 0
 Event: 4.166 loading class java/lang/Throwable$WrappedPrintStream
@@ -1310,7 +1310,7 @@ ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsysca
 
 VM Arguments:
 jvm_args: -javaagent:/snap/intellij-idea-community/216/lib/idea_rt.jar=44905:/snap/intellij-idea-community/216/bin -Dfile.encoding=UTF-8 
-java_command: sample.Main
+java_command: LANChat.Main
 java_class_path (initial): /home/iamahad/IdeaProjects/LANChat/out/production/LANChat
 Launcher Type: SUN_STANDARD
 

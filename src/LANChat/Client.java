@@ -1,4 +1,4 @@
-package sample;
+package LANChat;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class Client {
     Socket soc;
-    String userName = "Unknown";
+    String userName;
     public void startClient(String userName, String ip, int port){
         this.userName = userName;
         System.out.println("Client Started");
@@ -16,6 +16,17 @@ public class Client {
             soc = new Socket(ip,port);
             ServerConnection serverConnection = new ServerConnection(soc);
             new Thread(serverConnection).start();
+            Main.controller.bottomLabel.setText("Connected");
+            try {
+                BufferedReader keyboard = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(userName.getBytes())));
+                PrintWriter out = new PrintWriter(soc.getOutputStream(),true);
+                String sendMessage = keyboard.readLine();
+                out.println("uSeRnAmE"+sendMessage);
+
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
 
         }catch (Exception e){
             e.printStackTrace();
@@ -25,8 +36,6 @@ public class Client {
         try {
             BufferedReader keyboard = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(message.getBytes())));
             PrintWriter out = new PrintWriter(soc.getOutputStream(),true);
-
-                System.out.println(">");
                 String sendMessage = keyboard.readLine();
                 out.println(userName+" : "+sendMessage);
 
