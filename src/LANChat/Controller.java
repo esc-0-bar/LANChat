@@ -118,7 +118,7 @@ public class Controller {
         window.setMinHeight(150);
         window.setMaxHeight(150);
         Label label = new Label("Project made by Mohammad Shiblee Noman Ahad");
-        Label portLabel = new Label("Github Link - https://github.com/i-am-ahad");
+        Label portLabel = new Label("Github Link - https://github.com/i-am-ahad/LANChat");
         Button okButton = new Button("Ok");
         okButton.setOnAction(e-> window.close());
         VBox layout = new VBox();
