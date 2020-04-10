@@ -24,10 +24,15 @@ Install the SDK and Libries to run the application.
 
 
 ### Screenshots
+----
 ![](assets/LANChat1.png)
+
 ![](assets/LANChat2.png)
+
 ![](assets/LANChat3.png)
+
 ![](assets/LANChat4.png)
+
 ![](assets/LANChat5.png)
 
 
